@@ -1,4 +1,17 @@
+struct User {
+    email: String,
+    username: String,
+    active: bool,
+    sign_in_count: u64
+}
+
 fn main() {
+    let user1 = User {
+        email: String::from("moxuy@gmail.com"),
+        username: "moxuy",
+        active: true,
+        sign_in_count: 1
+    };
     let mut s = String::from("hello world!");
     let word = first_word(&s);
     s.clear();
